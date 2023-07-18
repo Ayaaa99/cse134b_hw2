@@ -1,37 +1,58 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Chi's Personal Website</title>
+  <style>
+    body {
+        border-style: dotted;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Personal Website</h1>
-  </header>
+    <script>
+        document.querySelector("canvas").innerHTML = "Hello JavaScript!";
+    </script>
 
-  <nav>
-    <ul>
-      <li><a href="#section1">Section 1</a></li>
-      <li><a href="#section2">Section 2</a></li>
-      <li><a href="#section3">Section 3</a></li>
-      <li><a href="section1-extended.html">Section 1 Extended</a></li>
-    </ul>
-  </nav>
+    <header>
+        <h1>Welcome to My Personal Website 欢迎光临</h1>
+    </header>
 
-  <section id="section1">
-    <h2>Section 1</h2>
-    <p>This is the content of Section 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p><a href="section1-extended.html">Learn more about Section 1</a></p>
-  </section>
+    <main>
+        <h3>Menu</h3>
+        <nav>
+            <ul>
+            <li><a href="#my_resume">My Resume</a></li>
+            <li><a href="#my_projects">My projects</a></li>
+            <li><a href="#contact_me">Contact me</a></li>
+            </ul>
+        </nav>
 
-  <section id="section2">
-    <h2>Section 2</h2>
-    <p>This is the content of Section 2. Ut vel tortor nisi. In rhoncus volutpat congue.</p>
-  </section>
+        <section id="my_resume">
+            <h2>My Resume</h2>
+            <p>This is my resume.</p>
+            <aside>I really love cats.</aside>
+            <p><a href="resume.html">Learn more about My Resume.</a></p>
+        </section>
 
-  <section id="section3">
-    <h2>Section 3</h2>
-    <p>This is the content of Section 3. Donec in aliquam dui. Aliquam consectetur nibh at turpis pretium tempor.</p>
-  </section>
+        <section id="my_projects">
+            <h2>My Projects</h2>
+            <p>This is the content of my projects.</p>
+            <div id="project1">
+                <p>This is about my first project.</p>
+            </div>
+            <p><a href="projects.html">Learn more about My Projects.</a></p>
+        </section>
+
+        <section id="contact_me">
+            <h2>Contact me</h2>
+            <p>This is my contact information.</p>
+            <p><a href="contact.html">Contact me now!</a></p>
+        </section>
+    </main>
+
+    <footer>Made by Chi Zhang</footer>
+
 </body>
 </html>
