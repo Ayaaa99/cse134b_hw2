@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chi's Personal Website</title>
-  <style>
-    body {
-        border-style: dotted;
-    }
-  </style>
-  <meta charset="UTF-8">
-  <link rel="icon" href="favicon.ico">
+    <title>Chi's Personal Website</title>
+    <style>
+        body {
+            border-style: dotted;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <script>
-        document.querySelector("canvas").innerHTML = "Hello JavaScript!";
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
     </script>
-
     <header>
         <h1>Welcome to My Personal Website 欢迎光临</h1>
+        <picture>
+            <source srcset="https://www.askideas.com/media/13/Welcome-Hanging-Banner.jpg">
+            <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/4_1024x1024.png?v=1571606116" alt="Welcome" width="200">
+        </picture>
+        <audio controls>
+            <source src="zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
+        </audio>
     </header>
 
     <main>
@@ -29,6 +39,10 @@
             </ul>
         </nav>
 
+        <canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas>
+
+        <hr>
+
         <section id="my_resume">
             <h2>My Resume</h2>
             <p>This is my resume.</p>
@@ -36,21 +50,40 @@
             <a href="resume.html">Learn more about <span class="resume">My Resume</span>.</a>
         </section>
 
+        <hr>
+
         <section id="my_projects">
             <h2>My Projects</h2>
             <p>This is the content of <b>my projects</b>.<br>
             Browse to learn more about my projects.</p>
             <div id="project1">
                 <p>This is about my <i>first</i> project.</p>
+                <video width="500" controls>
+                    <source src="nevergonnagiveyouup.mp4" type="video/mp4">
+                </video>
+                <br>
+                <code>
+                    //Here's the code for my project 1.
+                </code>
             </div>
             <a href="projects.html">Learn more about My Projects.</a>
         </section>
 
+        <hr>
+
         <section id="contact_me">
             <h2>Contact me</h2>
             <p>This is my <strong>contact information</strong>.</p>
-            <a href="contact.html">Contact me now!</a>
+            <pre>
+            My email is
+                    chz011@ucsd.edu
+                My phone number is
+                    858-281-1938
+            </pre>
+            <a href="contact.html">Contact me <em>now!</em></a>
         </section>
+
+        <iframe src="https://ucsd.edu/" height="200" width="500" title="UCSD Website"></iframe>
     </main>
 
     <footer>Made by Chi Zhang</footer>
