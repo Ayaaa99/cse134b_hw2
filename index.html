@@ -2,11 +2,7 @@
 <html>
 <head>
     <title>Chi's Personal Website</title>
-    <style>
-        body {
-            border-style: dotted;
-        }
-    </style>
+    <style></style>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico">
 </head>
@@ -20,16 +16,16 @@
     </script>
     <header>
         <h1>Welcome to My Personal Website 欢迎光临</h1>
-        <picture>
-            <source srcset="https://www.askideas.com/media/13/Welcome-Hanging-Banner.jpg">
-            <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/4_1024x1024.png?v=1571606116" alt="Welcome" width="200">
-        </picture>
-        <audio controls>
-            <source src="zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
-        </audio>
     </header>
 
     <main>
+        <picture>
+            <source srcset="https://www.askideas.com/media/13/Welcome-Hanging-Banner.jpg">
+            <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/4_1024x1024.png?v=1571606116" alt="Welcome" width="200">
+        </picture><br>
+        <audio controls>
+            <source src="zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
+        </audio>
         <h3>Menu</h3>
         <nav>
             <ul>
@@ -38,6 +34,10 @@
             <li><a href="#contact_me">Contact me</a></li>
             </ul>
         </nav>
+
+        <template>
+            <p>This is hidden in the template.</p>
+        </template>
 
         <canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas>
         <svg width="300" height="300">
@@ -54,6 +54,10 @@
                 <li>second info.</li>
             </ol>
             <aside>I really love cats.</aside>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6T6ig07FB2SosBXLn2tTV5s9rC6HoxTIxwQ&usqp=CAU" alt="cats">
+                <figcaption>The best animal in this world.</figcaption>
+            </figure>
             <a href="resume.html">Learn more about <span class="resume">My Resume</span>.</a>
         </section>
 
@@ -86,6 +90,20 @@
         <section id="contact_me">
             <h2>Contact me</h2>
             <p>This is my <strong>contact information</strong>.</p>
+            <table>
+                <caption>Contact Info</caption>
+                <colgroup>
+                    <col span="2" style="background-color: aqua;"
+                </colgroup>
+                <tr>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                </tr>
+                <tr>
+                    <td>858-281-1938</td>
+                    <td>chz011@ucsd.edu</td>
+                </tr>
+            </table>
             <pre>
             My email is
                     chz011@ucsd.edu
