@@ -40,12 +40,19 @@
         </nav>
 
         <canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas>
-
+        <svg width="300" height="300">
+            <circle cx="100" cy="100" r="80" fill="blue" />
+          </svg>
+          
         <hr>
 
         <section id="my_resume">
             <h2>My Resume</h2>
             <p>This is my resume.</p>
+            <ol>
+                <li>first info.</li>
+                <li>second info.</li>
+            </ol>
             <aside>I really love cats.</aside>
             <a href="resume.html">Learn more about <span class="resume">My Resume</span>.</a>
         </section>
@@ -66,7 +73,12 @@
                     //Here's the code for my project 1.
                 </code>
             </div>
-            <a href="projects.html">Learn more about My Projects.</a>
+            <details>
+                <summary>More Details</summary>
+                <p>More detail text for my project.</p>
+                <a href="projects.html">Learn more about My Projects.</a>
+            </details>
+            
         </section>
 
         <hr>
@@ -81,6 +93,32 @@
                     858-281-1938
             </pre>
             <a href="contact.html">Contact me <em>now!</em></a>
+            <form>
+                <fieldset>
+                    <legend>Contact Form:</legend>
+                    <label for="contact-method">Choose a way to contact:</label>
+                    <select id="contact-method">
+                        <optgroup label="method">
+                            <option>Email</option>
+                            <option>Mobile</option>
+                        </optgroup>
+                    </select><br>
+                    <label for="messgae-type">Choose the type of message:</label>
+                    <input list="msgtypes" id="messgae-type">
+                    <datalist id="msgtypes">
+                        <option>Personal Message</option>
+                        <option>Academic Message</option>
+                        <option>Recrument Message</option>
+                    </datalist><br>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" rows="6" cols="50">
+Enter your message here.
+                    </textarea><br>
+                    <button>Submit</button>
+                </fieldset>
+            </form>
         </section>
 
         <iframe src="https://ucsd.edu/" height="200" width="500" title="UCSD Website"></iframe>
