@@ -2,9 +2,23 @@
 <html>
 <head>
     <title>Chi's Personal Website</title>
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: 'Roboto';
+        }
+        .flex-container {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
     <meta charset="UTF-8">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="media\favicon.ico">
 </head>
 <body>
     <script>
@@ -24,16 +38,21 @@
             <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/4_1024x1024.png?v=1571606116" alt="Welcome" width="200">
         </picture><br>
         <audio controls>
-            <source src="zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
+            <source src="media/zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
         </audio>
+
         <h3>Menu</h3>
         <nav>
-            <ul>
-            <li><a href="#my_resume">My Resume</a></li>
-            <li><a href="#my_projects">My projects</a></li>
-            <li><a href="#contact_me">Contact me</a></li>
-            </ul>
+        <ul class="flex-container">
+            <!--Image source:https://www.google.com/imgres?imgurl=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F04%2F75%2F01%2F06%2F360_F_475010683_QcMoX9EuZkjVToNNtXCDbejMo4tIj06i.jpg&tbnid=CZpbO8rb29tCoM&vet=12ahUKEwiP4PG50q2AAxW0i-4BHcnaAPYQMygBegUIARDyAQ..i&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%2Fimages%3Fk%3Dresume%2Blogo&docid=WXk4z99pMsONHM&w=360&h=360&q=resume%20logo&ved=2ahUKEwiP4PG50q2AAxW0i-4BHcnaAPYQMygBegUIARDyAQ-->
+            <li><a href="#my_resume">My Resume<br><img style="width: 60vw;" src="media/resume.jpg" alt="Image for My Resume"></a></li>
+            <!--Image source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.designcrowd.com%2Fdesign%2F19836872&psig=AOvVaw3zDmEy_VvDbSETXnZw3hQ3&ust=1690504554297000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPDmzq7SrYADFQAAAAAdAAAAABAE-->
+            <li><a href="#my_projects">My Projects<br><img style="width: 60vw;" src="media/project.jpg" alt="Image for My Projects"></a></li>
+            <!--Image source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zen-tools.net%2Fcontact-me.html&psig=AOvVaw37hiBwokjVsJMz2XMFwPbj&ust=1690503323750000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNDYg-LNrYADFQAAAAAdAAAAABAJ-->
+            <li><a href="#my_projects">Contact Me<br><img style="width: 60vw;" src="media/contact.jpg" alt="Image for My Contacts"></a></li>
+        </ul>
         </nav>
+        
 
         <template>
             <p>This is hidden in the template.</p>
@@ -70,7 +89,7 @@
             <div id="project1">
                 <p>This is about my <i>first</i> project.</p>
                 <video width="500" controls>
-                    <source src="nevergonnagiveyouup.mp4" type="video/mp4">
+                    <source src="media/nevergonnagiveyouup.mp4" type="video/mp4">
                 </video>
                 <br>
                 <code>
@@ -81,8 +100,7 @@
                 <summary>More Details</summary>
                 <p>More detail text for my project.</p>
                 <a href="projects.html">Learn more about My Projects.</a>
-            </details>
-            
+            </details> 
         </section>
 
         <hr>
