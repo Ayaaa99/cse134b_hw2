@@ -6,8 +6,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
+        :root{
+            --background-color: #fff3e9;
+        }
         body{
-            background-color: antiquewhite;
+            background-color: var(--background-color);
             font-family: 'Roboto';
         }
         .flex-container {
@@ -16,6 +19,28 @@
             align-items: center;
             gap: 15px;
         }
+        @keyframes animation {
+            0%   {color: red;}
+            25%  {color: yellow;}
+            50%  {color: blue;}
+            100% {color: green;}
+        }
+        h1{
+            text-align: center;
+            animation-name: animation;
+            animation-duration: 4s;
+        }
+        .title {
+            font-size: 18px;
+            transition: font-size 2s 1s;
+        }
+        .title:hover{
+            font-size: 28px;
+        }
+        #transpic{
+            transform: rotate(180deg);
+        }
+
     </style>
     <meta charset="UTF-8">
     <link rel="icon" href="media\favicon.ico">
@@ -29,7 +54,7 @@
         ctx.stroke();
     </script>
     <header>
-        <h1>Welcome to My Personal Website 欢迎光临</h1>
+        <h1>Welcome to My Personal Website<br> 欢迎光临</h1>
     </header>
 
     <main>
@@ -41,15 +66,15 @@
             <source src="media/zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
         </audio>
 
-        <h3>Menu</h3>
+        <h2 class="title">Menu</h2>
         <nav>
         <ul class="flex-container">
             <!--Image source:https://www.google.com/imgres?imgurl=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F04%2F75%2F01%2F06%2F360_F_475010683_QcMoX9EuZkjVToNNtXCDbejMo4tIj06i.jpg&tbnid=CZpbO8rb29tCoM&vet=12ahUKEwiP4PG50q2AAxW0i-4BHcnaAPYQMygBegUIARDyAQ..i&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%2Fimages%3Fk%3Dresume%2Blogo&docid=WXk4z99pMsONHM&w=360&h=360&q=resume%20logo&ved=2ahUKEwiP4PG50q2AAxW0i-4BHcnaAPYQMygBegUIARDyAQ-->
-            <li><a href="#my_resume">My Resume<br><img style="width: 60vw;" src="media/resume.jpg" alt="Image for My Resume"></a></li>
+            <li><a href="#my_resume">My Resume<br><img style="width: 30vw;" src="media/resume.jpg" alt="Image for My Resume"></a></li>
             <!--Image source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.designcrowd.com%2Fdesign%2F19836872&psig=AOvVaw3zDmEy_VvDbSETXnZw3hQ3&ust=1690504554297000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPDmzq7SrYADFQAAAAAdAAAAABAE-->
-            <li><a href="#my_projects">My Projects<br><img style="width: 60vw;" src="media/project.jpg" alt="Image for My Projects"></a></li>
+            <li><a href="#my_projects">My Projects<br><img style="width: 30vw;" src="media/project.jpg" alt="Image for My Projects"></a></li>
             <!--Image source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zen-tools.net%2Fcontact-me.html&psig=AOvVaw37hiBwokjVsJMz2XMFwPbj&ust=1690503323750000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNDYg-LNrYADFQAAAAAdAAAAABAJ-->
-            <li><a href="#my_projects">Contact Me<br><img style="width: 60vw;" src="media/contact.jpg" alt="Image for My Contacts"></a></li>
+            <li><a href="#my_projects">Contact Me<br><img style="width: 30vw;" src="media/contact.jpg" alt="Image for My Contacts"></a></li>
         </ul>
         </nav>
         
@@ -66,7 +91,7 @@
         <hr>
 
         <section id="my_resume">
-            <h2>My Resume</h2>
+            <h2 class="title">My Resume</h2>
             <p>This is my resume.</p>
             <ol>
                 <li>first info.</li>
@@ -74,7 +99,7 @@
             </ol>
             <aside>I really love cats.</aside>
             <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6T6ig07FB2SosBXLn2tTV5s9rC6HoxTIxwQ&usqp=CAU" alt="cats">
+                <img id="transpic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6T6ig07FB2SosBXLn2tTV5s9rC6HoxTIxwQ&usqp=CAU" alt="cats">
                 <figcaption>The best animal in this world.</figcaption>
             </figure>
             <a href="resume.html">Learn more about <span class="resume">My Resume</span>.</a>
@@ -83,7 +108,7 @@
         <hr>
 
         <section id="my_projects">
-            <h2>My Projects</h2>
+            <h2 class="title">My Projects</h2>
             <p>This is the content of <b>my projects</b>.<br>
             Browse to learn more about my projects.</p>
             <div id="project1">
@@ -106,7 +131,7 @@
         <hr>
 
         <section id="contact_me">
-            <h2>Contact me</h2>
+            <h2 class="title">Contact me</h2>
             <p>This is my <strong>contact information</strong>.</p>
             <table>
                 <caption>Contact Info</caption>
