@@ -30,6 +30,9 @@
             animation-name: animation;
             animation-duration: 4s;
         }
+        h2{
+            background-image: url("media/background.avif");
+        }
         .title {
             font-size: 18px;
             transition: font-size 2s 1s;
@@ -44,6 +47,12 @@
             body{
                 background-color:lightblue;
             }
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
     </style>
     <meta charset="UTF-8">
@@ -64,7 +73,7 @@
     <main>
         <picture>
             <source srcset="https://www.askideas.com/media/13/Welcome-Hanging-Banner.jpg">
-            <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/4_1024x1024.png?v=1571606116" alt="Welcome" width="200">
+            <img style="filter: contrast(1.2);" src="https://cdn.shopify.com/s/files/1/1061/1924/products/4_1024x1024.png?v=1571606116" alt="Welcome Image" width="200">
         </picture><br>
         <audio controls>
             <source src="media/zamona-net-twice-alcohol-free.mp3" type="audio/mpeg">
@@ -86,11 +95,6 @@
         <template>
             <p>This is hidden in the template.</p>
         </template>
-
-        <canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas>
-        <svg width="300" height="300">
-            <circle cx="100" cy="100" r="80" fill="blue" />
-          </svg>
           
         <hr>
 
@@ -106,7 +110,6 @@
                 <img id="transpic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6T6ig07FB2SosBXLn2tTV5s9rC6HoxTIxwQ&usqp=CAU" alt="cats">
                 <figcaption>The best animal in this world.</figcaption>
             </figure>
-            <a href="resume.html">Learn more about <span class="resume">My Resume</span>.</a>
         </section>
 
         <hr>
@@ -128,7 +131,6 @@
             <details>
                 <summary>More Details</summary>
                 <p>More detail text for my project.</p>
-                <a href="projects.html">Learn more about My Projects.</a>
             </details> 
         </section>
 
@@ -157,8 +159,6 @@
                 My phone number is
                     858-281-1938
             </pre>
-            <a href="contact.html">Contact me <em>now!</em></a>
-            <form>
                 <fieldset>
                     <legend>Contact Form:</legend>
                     <label for="contact-method">Choose a way to contact:</label>
@@ -186,8 +186,6 @@ Enter your message here.
             </form>
         </section>
 
-        <iframe src="https://ucsd.edu/" height="200" width="500" title="UCSD Website"></iframe>
-    </main>
 
     <footer>Made by Chi Zhang</footer>
 
